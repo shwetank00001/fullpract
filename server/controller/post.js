@@ -1,12 +1,7 @@
 const PostModel = require('../model/postModel')
 
 async function getAllPosts( req, res){
-    try {
-        const getData = await PostModel.find()
-        res.send(getData)
-    } catch (error) {
-        console.log(error)
-    }
+    res.json("Hi/: Running")
 }
 
 module.exports = {

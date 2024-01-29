@@ -11,7 +11,7 @@ app.get('/', ( req, res ) => {
     res.send("hello")
 })
 
-app.use('/posts', posts)
+app.use('/posts', posts )
 
 app.listen(5000, ()=>{
     console.log("APP ON PORT: 5000")
